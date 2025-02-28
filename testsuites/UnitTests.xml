@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Github Actions Unit Test Suite">
+    <test name="UnitTests">
+        <groups>
+            <run>
+                <exclude name="integration"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="great.project.*"/>
+        </packages>
+    </test>
+</suite>
