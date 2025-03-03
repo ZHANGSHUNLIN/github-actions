@@ -63,9 +63,9 @@
 <!--            <property name="severity" value="error"/>-->
         </module>
 
-        <module name="great.project.checkstyle.FunctionBraceWhitespaceCheck">
-<!--            <property name="severity" value="error"/>-->
-        </module>
+<!--        <module name="great.project.checkstyle.FunctionBraceWhitespaceCheck">-->
+<!--&lt;!&ndash;            <property name="severity" value="error"/>&ndash;&gt;-->
+<!--        </module>-->
 
         <module name="AvoidEscapedUnicodeCharacters">
             <property name="allowEscapesForControlCharacters" value="true"/>
