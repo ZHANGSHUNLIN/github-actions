@@ -1,4 +1,4 @@
-package great.project;
+package great.project.demo;
 
 /*
  * Copyright (c) 2025. The BifroMQ Authors. All Rights Reserved.
@@ -13,18 +13,19 @@ package great.project;
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-public class Foo {
+import org.testng.annotations.Test;
 
+public class FooTest {
+
+    @Test
     public void foo() {
-        System.out.println("Foo");
+        Foo foo = new Foo();
+        foo.foo();
     }
 
-    public void bar(boolean isPrint) {
-        if (isPrint) {
-            foo();
-        } else {
-            System.out.println(System.currentTimeMillis());
-        }
+    @Test
+    public void bar() {
+        Foo foo = new Foo();
+        foo.bar(true);
     }
-
 }

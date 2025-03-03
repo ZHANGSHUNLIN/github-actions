@@ -1,4 +1,4 @@
-package great.project;
+package great.project.demo;
 
 /*
  * Copyright (c) 2025. The BifroMQ Authors. All Rights Reserved.
@@ -13,19 +13,28 @@ package great.project;
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
+
 import org.testng.annotations.Test;
 
-public class FooTest {
+public class HelloTest {
 
     @Test
-    public void foo() {
-        Foo foo = new Foo();
-        foo.foo();
+    public void sayHello() {
+        Hello hello = new Hello();
+        hello.sayHello("hello");
     }
 
     @Test
-    public void bar() {
-        Foo foo = new Foo();
-        foo.bar(true);
+    public void sayHelloNull() {
+        Hello hello = new Hello();
+        hello.sayHello(null);
     }
+
+    @Test
+    public void sayHelloEmpty() {
+        Hello hello = new Hello();
+        hello.sayHello(" ");
+    }
+
+
 }
